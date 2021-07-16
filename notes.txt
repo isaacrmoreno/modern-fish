@@ -2,6 +2,11 @@ User stories:
 
 I want to be able to select the type of fish I want to fish for via a drop down
 
+I can hard code this information or I can input it into google Firestore and map it when creating my drop down?
+(Lets try both)
+Hard code for now, then dig deeper!
+
+Reading firebase documentation
 
 
 Exploration: 
