@@ -16,7 +16,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 
 - [How to Structure Your Data | Get to know Cloud Firestore #5](https://youtu.be/haMOUb3KVSo)
 - [React-Bootstrap | Navbars](https://react-bootstrap.netlify.app/components/navbar/#navbars)
-- []()
+- [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
 - []()
 - []()
 
