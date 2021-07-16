@@ -9,7 +9,8 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 
 ## Planning 💭
 
-[Google JambBoard Sessions](https://jamboard.google.com/d/1FJhob6JlhvUJvb_CHkdnW7x68ARuwwHf8LQ5zq6dMd4/edit?usp=sharing)
+- [Google JambBoard Sessions](https://jamboard.google.com/d/1FJhob6JlhvUJvb_CHkdnW7x68ARuwwHf8LQ5zq6dMd4/edit?usp=sharing)
+- [Google Sheets License Links](https://docs.google.com/spreadsheets/d/1a7eg-rUPJPo-gTNdO2MGwSv6_pI3vOlYoblLg1BNEh8/edit?usp=sharing)
 
 ## Referenced Resources 📚
 
