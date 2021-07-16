@@ -6,7 +6,8 @@ I can hard code this information or I can input it into google Firestore and map
 (Lets try both)
 Hard code for now, then dig deeper!
 
-Reading firebase documentation
+Reading firebase documentation:
+Watching youtube videos to use Firebase without Redux + adding Firebase data for dropdown. 
 
 
 Exploration: 
