@@ -3,6 +3,8 @@
 
 ### By [Isaac Moreno](https://www.linkedin.com/in/isaacrmoreno/) 👨‍💻 - Click [here](gh-PagesLinkGoesHere.com) to view project.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Description 📝
 
 Modern Fish aims to simplify the fishing experience surrounding equipment, setup, and species information to empower the public to get outside and fish! 🎣
@@ -17,12 +19,14 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [How to Structure Your Data | Get to know Cloud Firestore #5](https://youtu.be/haMOUb3KVSo)
 - [React-Bootstrap | Navbars](https://react-bootstrap.netlify.app/components/navbar/#navbars)
 - [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
+- [How To Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
 - [How to get data in Cloud Firestore with React](https://www.youtube.com/watch?v=ckkeZ_f3b-M)
-- []()
 
-# Setup/Installation Instructions 📁
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## Prerequisites 🖥️
+## Setup/Installation Instructions 📁
+
+<h2>Prerequisites 🖥️</h2>
 
 - [Node](https://nodejs.org/en/)
 - A text editor like [VSCode](https://code.visualstudio.com/) | [Atom](https://atom.io/) | [Sublime](https://www.sublimetext.com/)
@@ -36,11 +40,15 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
    - Optional: Run command `npm run build` to bundle files
    - Finally, run the command `npm run start` to start a development server
 
-# Bugs 🐛
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2>Bugs 🐛</h2>
 
 No known Issues
 
-# Contact ✉️
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2>Contact ✉️</h2>
 
 <a href="https://www.linkedin.com/in/isaacrmoreno/">
 <img src=https://www.siggis.be/wp-content/uploads/2018/01/linkedin-white-logo-png-14.png  height="35" style="vertical-align:top; margin:4px" alt="Follow @isaacrmoreno on Linkedin"> 
@@ -52,7 +60,9 @@ No known Issues
 <a href="mailto:ipdxcreative@gmail.com">
 <img src=https://image.flaticon.com/icons/png/512/3617/3617143.png height="35" style="vertical-align:top; margin:4px" alt="Envelope Icon to email Isaac Moreno"></a>
 
-# Technologies Used 💾
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2>Technologies Used 💾</h2>
 
 <div>
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="html" height="45" style="vertical-align:top; margin:4px">
@@ -66,6 +76,8 @@ No known Issues
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="VS Code" height="45" style="vertical-align:top; margin:4px">
 </div>
 
-# Copyright and License ⚖️
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2>Copyright and License ⚖️</h2>
 
 [MIT License](license) &copy; 2021 Isaac Moreno
