@@ -1,0 +1,40 @@
+Name of Student: Isaac Moreno
+
+Name of Project: Modern Fish
+
+Project's Purpose or Goal: It will organize fishing information surrounding equipment/setup and species to inform/empower more people to get outside and fish.
+
+List the absolute minimum features the project requires to meet this purpose or goal:
+
+Provide a clean/UI experience that redirects user to appropriate website to buy fishing license based off of user input (Selected State) 
+Display a digital “rig set up”  based on user input (What do you want to fish for?) with affiliate links for the products being used within the set up. Affiliate links will likely include SportsMans Warehouse, Cabelas, Mad River Outfitters and Addicted Fishing)
+Display an about page that will describe the purpose of the site and outdoor/fishing ethics (Mindset around patience because fishing is supposed to be fun/Catch and Release etc.)
+
+
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+
+If we are shown how to make multiple page web apps with React I will use that with Firebase as my backend, if not I will likely make an MVC with C#. 
+Concerning API’s, I may pull from a weather API at some point to display river water levels,  but other than that I will likely be digging through/organizing old pdf and blog information to be as digestible and informative as possible. 
+I will also likely be using Bootstrap heavily considering I want this web app to be as mobile friendly as possible.
+This is also a space where I may practice implementing Sass when/if I get to styling
+
+
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+
+Seed Database with Oregon fish species and display monthly charts of when they are running in what rivers.
+Provide basic information of things to keep in mind when fishing (Location/Weather/Time of day/ Water Height/Seasonality etc/)
+Knot Tutorials based on use cases.
+(I want to fish for surfperch ie. Use this knot.)
+
+
+
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+
+For the seeded database I will likely make it myself or I will use Firebase.
+This will likely require further research in terms of what information I want to display depending on what the user wants to fish for. I might have to also store all this Location/Weather/Time of day/Water Height and seasonality information in a database.
+Knot tutorials actually aren’t half bad on YouTube So I can always embed some within the site.
+Is there anything else you'd like your instructor to know?
+
+I don’t want to redirect the user to their state department of fish and wildlife because it moves them away from the Modern Fish web app, but I do want to make obtaining a license and following regulations as easy as possible so it's worth it in the end.
+Concerning the digital rig set up. This one is not a reinvention of the wheel because fishermen have been doing this for quite some time on some poorly drawn PDF documents, I more so want to organize this information and ideally give it a consistent standard in terms of how this information is displayed. 
+This project will only be catering to spin fishing. I have minimal knowledge of Ocean fishing and as much as I would like to cater this to fly fishing for its more environmental and holistic approach, I recognize that the barrier to entry into fly fishing is more intimidating. Until the stigma/culture changes I recognize the easiest way to get people out on the water is through spin fishing. 
