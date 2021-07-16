@@ -1,20 +1,53 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import firebase from './../firebase';
 
 function License() {
+
+  const [states, setStates] = useState([]);
+  const [loading, setLoading] = useState(false)
+
+  const ref = firebase.firestore().collection('states');
+
+  function getStates() {
+    setLoading(true);
+    ref.onSnapshot((querySnapshot) => {
+      const stateInfo=[];
+      querySnapshot.forEach((doc) => {
+        stateInfo.push(doc.data());
+      })
+      setStates(stateInfo);
+      setLoading(false);
+    })
+  }
+
+  useEffect(() => {
+    getStates();
+  }, []);
+  
+  if (loading) {
+    return <h2>Loading...</h2>
+  }  
+
   return (
     <>
-    <Container>
-      <Row>
-        <Col></Col>
-          <Col xs={6}>
-            <select class="form-select form-select-lg" aria-label="Default select example">
-              <option selected>Select State</option>
-              <option value="1">One</option>
-            </select>
-          </Col>
-        <Col></Col>
-      </Row>
-    </Container>
+      <Container>
+        <Row>
+          <Col></Col>
+            <Col xs={6}>
+                <div key={states.id}>
+                  <select className="form-select form-select-lg" aria-label="State Select">
+                    <option>Select State</option>
+                      {states.map((state) => (
+                        <option value={state.name}>{state.name}</option>
+                        ))}
+                  </select>
+                </div>
+            </Col>
+          <Col></Col>
+        </Row>
+      </Container>
+    <Button>Submit</Button>
   </>
   );
 }
