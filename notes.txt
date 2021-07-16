@@ -9,6 +9,12 @@ now to figure best way to send user to appropriate link based off selected state
 
 I feel like im over complicating my button @.@
 
+pull id from selected drop down item. 
+
+use that id to pull url. and use that as href link to go to specific website. 
+
+Adding links and about section 
+
 Exploration: 
 Fish Species API
 River level API
