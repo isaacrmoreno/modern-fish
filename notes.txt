@@ -7,6 +7,8 @@ Was able to connect firebase to display state names in drop down.
 
 now to figure best way to send user to appropriate link based off selected state
 
+I feel like im over complicating my button @.@
+
 Exploration: 
 Fish Species API
 River level API
