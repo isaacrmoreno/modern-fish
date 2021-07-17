@@ -6,6 +6,7 @@ function License() {
 
   const [states, setStates] = useState([]);
   const [loading, setLoading] = useState(false)
+  // const [selectedState, setSelectedState] = useState(null)
 
   const ref = firebase.firestore().collection('states');
 
@@ -23,11 +24,17 @@ function License() {
 
   useEffect(() => {
     getStates();
-  }, []);
+  },[]);
   
   if (loading) {
     return <h2>Loading...</h2>
   }  
+
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   selectedState = {state.id}
+  //   setSelectedState === state.licenseUrl
+  // }
 
   return (
     <>
@@ -35,19 +42,24 @@ function License() {
         <Row>
           <Col></Col>
             <Col xs={6}>
-                <div key={states.id}>
-                  <select className="form-select form-select-lg" aria-label="State Select">
-                    <option>Select State</option>
-                      {states.map((state) => (
-                        <option value={state.name}>{state.name}</option>
-                        ))}
-                  </select>
-                </div>
+              {/* <form onSubmit={handleSubmit}> */}
+                <select className="form-select form-select-lg" aria-label="State Select">
+                  <option disable hidden selected>Select State</option>
+                    {states.map((state) => (
+                  <option value={state.id}>{state.name}</option>
+                    ))}
+                </select>
+                {/* <div className="d-grid gap-2"> */}
+                  {states.map((state) => (
+                  <Button size="lg" href={state.licenseUrl} target="_black">Submit</Button>
+                  ))}
+                {/* </div>  */}
+                {/* <Button size="lg" type="submit" onClick={() = e => {}} target="_black">Submit</Button> */}
+              {/* </form> */}
             </Col>
           <Col></Col>
         </Row>
       </Container>
-    <Button>Submit</Button>
   </>
   );
 }
