@@ -21,6 +21,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
 - [How To Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
 - [How to get data in Cloud Firestore with React](https://www.youtube.com/watch?v=ckkeZ_f3b-M)
+- [Creating a Navbar Using react-router-dom and react-bootstrap,react-router-bootstrap](https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
