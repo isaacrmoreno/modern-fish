@@ -6,7 +6,7 @@ function License() {
 
   const [states, setStates] = useState([]);
   const [loading, setLoading] = useState(false)
-  // const [selectedState, setSelectedState] = useState(null)
+  const [selectedState, setSelectedState] = useState(null)
 
   const ref = firebase.firestore().collection('states');
 
@@ -30,11 +30,20 @@ function License() {
     return <h2>Loading...</h2>
   }  
 
+
   // const handleSubmit = e => {
   //   e.preventDefault();
   //   selectedState = {state.id}
   //   setSelectedState === state.licenseUrl
   // }
+
+  // const stateId = useSelector(state => state.firestore.data.state[stateId])
+
+  function handleSubmitState(id) {
+    setSelectedState(id)
+  }
+
+  console.log(selectedState)
 
   return (
     <>
@@ -50,9 +59,10 @@ function License() {
                     ))}
                 </select>
                 {/* <div className="d-grid gap-2"> */}
-                  {states.map((state) => (
+                  {/* {states.map((state) => (
                   <Button size="lg" href={state.licenseUrl} target="_black">Submit</Button>
-                  ))}
+                  ))} */}
+                  <Button onClick={handleSubmitState}>Submit</Button>
                 {/* </div>  */}
                 {/* <Button size="lg" type="submit" onClick={() = e => {}} target="_black">Submit</Button> */}
               {/* </form> */}
