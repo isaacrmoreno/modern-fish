@@ -26,7 +26,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 
 ## Setup/Installation Instructions 📁
 
-<h2>Prerequisites 🖥️</h2>
+## Prerequisites 🖥️
 
 - [Node](https://nodejs.org/en/)
 - A text editor like [VSCode](https://code.visualstudio.com/) | [Atom](https://atom.io/) | [Sublime](https://www.sublimetext.com/)
@@ -42,13 +42,13 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2>Bugs 🐛</h2>
+## Bugs 🐛
 
 No known Issues
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2>Contact ✉️</h2>
+## Contact ✉️
 
 <a href="https://www.linkedin.com/in/isaacrmoreno/">
 <img src=https://www.siggis.be/wp-content/uploads/2018/01/linkedin-white-logo-png-14.png  height="35" style="vertical-align:top; margin:4px" alt="Follow @isaacrmoreno on Linkedin"> 
@@ -62,7 +62,7 @@ No known Issues
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2>Technologies Used 💾</h2>
+## Technologies Used 💾
 
 <div>
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="html" height="45" style="vertical-align:top; margin:4px">
