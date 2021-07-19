@@ -26,24 +26,25 @@ function License() {
     getStates();
   },[]);
   
+  const handleSubmit = e => {
+    e.preventDefault();
+    return 
+  } 
+
+  // find more examples of handleSubmit. 
+  // im close. 
+    
+  const handleChange = e => {
+    const { value, name } = e.target
+    const selectedStateUrl = { ...selectedState }
+    selectedStateUrl[name] = value
+    console.log(value)
+    setSelectedState(selectedStateUrl)
+  }
+
   if (loading) {
     return <h2>Loading...</h2>
   }  
-
-
-  // const handleSubmit = e => {
-  //   e.preventDefault();
-  //   selectedState = {state.id}
-  //   setSelectedState === state.licenseUrl
-  // }
-
-  // const stateId = useSelector(state => state.firestore.data.state[stateId])
-
-  function handleSubmitState(id) {
-    setSelectedState(id)
-  }
-
-  console.log(selectedState)
 
   return (
     <>
@@ -51,21 +52,15 @@ function License() {
         <Row>
           <Col></Col>
             <Col xs={6}>
-              {/* <form onSubmit={handleSubmit}> */}
-                <select className="form-select form-select-lg" aria-label="State Select">
-                  <option disable hidden selected>Select State</option>
-                    {states.map((state) => (
-                  <option value={state.id}>{state.name}</option>
+              <form onSubmit={handleSubmit}>
+                <select onChange={handleChange} defaultValue={null} className="form-select form-select-lg" aria-label="State Select">
+                  <option value={null} disable="true" hidden>Select State</option>
+                    {states.map((state, index) => (
+                  <option key={index} value={state.licenseUrl}>{state.name}</option>
                     ))}
                 </select>
-                {/* <div className="d-grid gap-2"> */}
-                  {/* {states.map((state) => (
-                  <Button size="lg" href={state.licenseUrl} target="_black">Submit</Button>
-                  ))} */}
-                  <Button onClick={handleSubmitState}>Submit</Button>
-                {/* </div>  */}
-                {/* <Button size="lg" type="submit" onClick={() = e => {}} target="_black">Submit</Button> */}
-              {/* </form> */}
+                  <Button type="submit">Submit</Button>
+              </form>
             </Col>
           <Col></Col>
         </Row>
