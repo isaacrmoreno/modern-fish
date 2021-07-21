@@ -22,6 +22,9 @@ function Navigation() {
           <LinkContainer to="/about">
             <Nav.Link>About</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/docs">
+            <Nav.Link>Docs</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Container>
   </Navbar>

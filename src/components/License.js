@@ -8,6 +8,8 @@ function License() {
   const [loading, setLoading] = useState(false)
   const [selectedState, setSelectedState] = useState(null)
 
+  console.log(`selected State:`, selectedState)
+
   const ref = firebase.firestore().collection('states');
 
   function getStates() {
@@ -28,21 +30,15 @@ function License() {
   
   const handleSubmit = e => {
     e.preventDefault();
-    handleChange(e.target.value) // yes. but what else. 
-    alert("this works")
-    // onSubmit(e.target.value)
+    handleChange()    
     return 
   } 
-
-  // find more examples of handleSubmit. 
-  // im close. 
     
   const handleChange = e => {
+
     const { value, name } = e.target
     const selectedStateUrl = { ...selectedState }
     selectedStateUrl[name] = value
-    // console.log(e)
-    // console.log(e.target)
     console.log(value)
     setSelectedState(selectedStateUrl)
   }
@@ -56,18 +52,18 @@ function License() {
       <Container>
         <Row>
           <Col></Col>
+          <Col></Col>
             <Col xs={6}>
               <form onSubmit={handleSubmit}>
                 <select onChange={handleChange} defaultValue={null} className="form-select form-select-lg" aria-label="State Select">
                   <option value={null} disable="true" hidden>Select State</option>
                     {states.map((state, index) => (
                   <option key={index} value={state.licenseUrl}>{state.name}</option>
-                    ))}
+                  ))}
                 </select>
-                  <Button type="submit">Submit</Button>
+                  <Button type="submit" href={selectedState}>Submit</Button>
               </form>
             </Col>
-          <Col></Col>
         </Row>
       </Container>
   </>
