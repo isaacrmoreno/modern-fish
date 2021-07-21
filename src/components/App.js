@@ -2,10 +2,9 @@ import Docs from "./Docs";
 import About from "./About";
 import Home from "./Home";
 import Navigation from "./Navigation";
-import License from "./License";
+// import License from "./License";
 // import Sponsors from "./Sponsors";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import SideBar from "./SideBar";
 
 function App() {
   return (
