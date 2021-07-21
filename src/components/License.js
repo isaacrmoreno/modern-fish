@@ -28,6 +28,9 @@ function License() {
   
   const handleSubmit = e => {
     e.preventDefault();
+    handleChange(e.target.value) // yes. but what else. 
+    alert("this works")
+    // onSubmit(e.target.value)
     return 
   } 
 
@@ -38,6 +41,8 @@ function License() {
     const { value, name } = e.target
     const selectedStateUrl = { ...selectedState }
     selectedStateUrl[name] = value
+    // console.log(e)
+    // console.log(e.target)
     console.log(value)
     setSelectedState(selectedStateUrl)
   }
