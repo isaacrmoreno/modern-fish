@@ -50,7 +50,7 @@ function Fish() {
     <>
       <Container>
         <Row>
-            <Col xs={6}>
+            <Col>
               <ul>
               {fish.map((fish, index) => (
                 <li key={index} value={fish.licenseUrl}><a href="">{fish.name}</a></li>

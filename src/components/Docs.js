@@ -10,10 +10,10 @@ function Docs() {
     <>
       <Container>
         <Row>
-          <Col sm={4} className="left-col">
+          <Col sm={4}>
             <SideBar/>
           </Col>
-          <Col sm={8} className="center-col">
+          <Col sm={8}>
             <Habitat/>
             <Technique/>
             <Gear/>
