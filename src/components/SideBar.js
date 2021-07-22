@@ -1,4 +1,5 @@
-import { Accordion, Button, Container, Row } from 'react-bootstrap';
+import Fish from './Fish'
+import { Container, Row } from 'react-bootstrap';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function SideBar() {
@@ -6,9 +7,10 @@ function SideBar() {
     <>
       <Container>
         <Row>
-          <p>Fish - Most Popular</p>
-        <ul>
+          <h3>Fish - Most Popular</h3>
           <hr/>
+          <Fish/>
+        {/* <ul>
           <li>
             <Accordion>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -29,27 +31,8 @@ function SideBar() {
               </Accordion.Collapse>
             </Accordion>
           </li>
-          <li>
-            <Accordion>
-                <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Salmon ↓
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="2">
-                  <p>Hello! I'm the body</p>
-                </Accordion.Collapse>
-              </Accordion>
-          </li>
-          <li>
-          <Accordion>
-                <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Bass ↓
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="3">
-                  <p>Hello! I'm the body</p>
-                </Accordion.Collapse>
-              </Accordion>
-          </li>
-        </ul>
+
+        </ul> */}
         </Row>
       </Container>
     </>

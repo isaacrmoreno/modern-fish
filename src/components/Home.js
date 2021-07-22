@@ -12,8 +12,8 @@ function Home() {
       <p className={utilStyles.headingLg}>
         Modern Fish aims to simplify the fishing experience surrounding equipment, setup, and species information to empower the public to get outside and fish!
       </p>
-      <Nav className="Center">
-          <Card border="primary" body>
+      <Nav>
+          <Card className={utilStyles.card} border="primary" body>
             <LinkContainer to="/docs">
                   <Nav.Link className={utilStyles.headingLg}>Fish Documentation 🎣</Nav.Link>
             </LinkContainer>

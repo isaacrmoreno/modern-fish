@@ -4,7 +4,6 @@ import GearSetUp from './GearSetUp';
 import Habitat from './Habitat';
 import SideBar from './SideBar';
 import Technique from './Technique';
-import Fish from './Fish';
 
 function Docs() {
   return (
@@ -15,7 +14,6 @@ function Docs() {
             <SideBar/>
           </Col>
           <Col sm={8} className="center-col">
-            <Fish/>
             <Habitat/>
             <Technique/>
             <Gear/>

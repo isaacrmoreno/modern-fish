@@ -46,23 +46,17 @@ function Fish() {
   if (loading) {
     return <h2>Loading...</h2>
   }  
-
   return (
     <>
       <Container>
         <Row>
             <Col xs={6}>
-
               <ul>
               {fish.map((fish, index) => (
-
                 <li key={index} value={fish.licenseUrl}><a href="">{fish.name}</a></li>
                   ))}
               </ul>
-              
             </Col>
-          <Col></Col>
-          <Col></Col>
         </Row>
       </Container>
   </>
