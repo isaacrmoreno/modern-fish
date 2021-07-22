@@ -6,6 +6,11 @@
       "src": "fish.png",
       "sizes": "16x16",
       "type": "png"
+    },
+    {
+      "src": "github.png",
+      "sizes": "16x16",
+      "type": "png"
     }
   ],
   "start_url": ".",
