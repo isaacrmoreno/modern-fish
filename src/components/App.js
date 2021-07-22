@@ -1,5 +1,4 @@
 import Docs from "./Docs";
-import About from "./About";
 import Home from "./Home";
 import Navigation from "./Navigation";
 // import License from "./License";
@@ -11,13 +10,12 @@ function App() {
     <>
     <Router>
       <Navigation/>
-      <Switch>
-        <Route exact path ="/" component={Home}/> 
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/docs" component={Docs}/>
-        {/* <Route exact path="/" component={License}/> */}
-        {/* <Sponsors/> */}
-      </Switch>
+        <Switch>
+          <Route exact path ="/" component={Home}/> 
+          <Route exact path="/docs" component={Docs}/>
+          {/* <Route exact path="/" component={License}/> */}
+          {/* <Sponsors/> */}
+        </Switch>
     </Router>
     </>
   );

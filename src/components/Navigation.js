@@ -16,13 +16,10 @@ function Navigation() {
               className="d-inline-block align-top"
               alt="Modern Fish logo"
             />{' '}
-            Modern Fish Oregon
+            Modern Fish
           </Navbar.Brand>      
         </LinkContainer>
         <Nav className="me-auto"> {/* effects text location  */}
-          <LinkContainer to="/about">
-            <Nav.Link>About</Nav.Link>
-          </LinkContainer>
           <LinkContainer to="/docs">
             <Nav.Link>Docs</Nav.Link>
           </LinkContainer>
