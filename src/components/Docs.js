@@ -14,7 +14,7 @@ function Docs() {
           <Col sm={4} className="left-col">
             <SideBar/>
           </Col>
-          <Col sm={8} className="main-col">
+          <Col sm={8} className="center-col">
             <Fish/>
             <Habitat/>
             <Technique/>
