@@ -1,73 +1,73 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import firebase from './../firebase';
+// import React, { useState, useEffect } from 'react';
+// import { Container, Row, Col, Button } from 'react-bootstrap';
+// import firebase from './../firebase';
 
-function License() {
+// function License() {
 
-  const [states, setStates] = useState([]);
-  const [loading, setLoading] = useState(false)
-  const [selectedState, setSelectedState] = useState(null)
+//   const [states, setStates] = useState([]);
+//   const [loading, setLoading] = useState(false)
+//   const [selectedState, setSelectedState] = useState(null)
 
-  console.log(`selected State:`, selectedState)
+//   console.log(`selected State:`, selectedState)
 
-  const ref = firebase.firestore().collection('states');
+//   const ref = firebase.firestore().collection('states');
 
-  function getStates() {
-    setLoading(true);
-    ref.onSnapshot((querySnapshot) => {
-      const stateInfo=[];
-      querySnapshot.forEach((doc) => {
-        stateInfo.push(doc.data());
-      })
-      setStates(stateInfo);
-      setLoading(false);
-    })
-  }
+//   function getStates() {
+//     setLoading(true);
+//     ref.onSnapshot((querySnapshot) => {
+//       const stateInfo=[];
+//       querySnapshot.forEach((doc) => {
+//         stateInfo.push(doc.data());
+//       })
+//       setStates(stateInfo);
+//       setLoading(false);
+//     })
+//   }
 
-  useEffect(() => {
-    getStates();
-  },[]);
+//   useEffect(() => {
+//     getStates();
+//   },[]);
   
-  const handleSubmit = e => {
-    e.preventDefault();
-    handleChange()    
-    return 
-  } 
+//   const handleSubmit = e => {
+//     e.preventDefault();
+//     handleChange()    
+//     return 
+//   } 
     
-  const handleChange = e => {
+//   const handleChange = e => {
 
-    const { value, name } = e.target
-    const selectedStateUrl = { ...selectedState }
-    selectedStateUrl[name] = value
-    console.log(value)
-    setSelectedState(selectedStateUrl)
-  }
+//     const { value, name } = e.target
+//     const selectedStateUrl = { ...selectedState }
+//     selectedStateUrl[name] = value
+//     console.log(value)
+//     setSelectedState(selectedStateUrl)
+//   }
 
-  if (loading) {
-    return <h2>Loading...</h2>
-  }  
+//   if (loading) {
+//     return <h2>Loading...</h2>
+//   }  
 
-  return (
-    <>
-      <Container>
-        <Row>
-          <Col></Col>
-          <Col></Col>
-            <Col xs={6}>
-              <form onSubmit={handleSubmit}>
-                <select onChange={handleChange} defaultValue={null} className="form-select form-select-lg" aria-label="State Select">
-                  <option value={null} disable="true" hidden>Select State</option>
-                    {states.map((state, index) => (
-                  <option key={index} value={state.licenseUrl}>{state.name}</option>
-                  ))}
-                </select>
-                  <Button type="submit" href={selectedState}>Submit</Button>
-              </form>
-            </Col>
-        </Row>
-      </Container>
-  </>
-  );
-}
+//   return (
+//     <>
+//       <Container>
+//         <Row>
+//           <Col></Col>
+//           <Col></Col>
+//             <Col xs={6}>
+//               <form onSubmit={handleSubmit}>
+//                 <select onChange={handleChange} defaultValue={null} className="form-select form-select-lg" aria-label="State Select">
+//                   <option value={null} disable="true" hidden>Select State</option>
+//                     {states.map((state, index) => (
+//                   <option key={index} value={state.licenseUrl}>{state.name}</option>
+//                   ))}
+//                 </select>
+//                   <Button type="submit" href={selectedState}>Submit</Button>
+//               </form>
+//             </Col>
+//         </Row>
+//       </Container>
+//   </>
+//   );
+// }
 
-export default License;
+// export default License;

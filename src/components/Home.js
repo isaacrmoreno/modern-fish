@@ -14,7 +14,7 @@ function Home() {
       </p>
       <Nav className="Center">
           <Card border="primary" body>
-            <LinkContainer to="/docs/">
+            <LinkContainer to="/docs">
                   <Nav.Link className={utilStyles.headingLg}>Fish Documentation 🎣</Nav.Link>
             </LinkContainer>
           </Card>
