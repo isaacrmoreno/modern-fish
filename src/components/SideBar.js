@@ -1,4 +1,3 @@
-import React from 'react'
 import { Accordion, Button, Container, Row } from 'react-bootstrap';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
