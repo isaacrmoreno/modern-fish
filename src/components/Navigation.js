@@ -1,6 +1,7 @@
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import mainLogo from '../img/fish.png';
+import gitHubLogo from '../img/github.png'
 
 function Navigation() {
   return (
@@ -25,6 +26,17 @@ function Navigation() {
           <LinkContainer to="/docs">
             <Nav.Link>Docs</Nav.Link>
           </LinkContainer>
+        </Nav>
+        <Nav>
+          <a href="https://github.com/isaacrmoreno/modern-fish">
+          <img
+            src={gitHubLogo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="GitHub logo"
+            />
+          </a>
         </Nav>
       </Container>
   </Navbar>
