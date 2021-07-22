@@ -12,7 +12,7 @@ function Fish() {
 
   const ref = firebase.firestore().collection('Fish');
 
-  function getfishs() {
+  function getfishes() {
     setLoading(true);
     ref.onSnapshot((querySnapshot) => {
       const fishDetails=[];
@@ -25,7 +25,7 @@ function Fish() {
   }
 
   useEffect(() => {
-    getfishs();
+    getfishes();
   },[]);
   
   const handleSubmit = e => {
@@ -46,6 +46,7 @@ function Fish() {
   if (loading) {
     return <h2>Loading...</h2>
   }  
+  
   return (
     <>
       <Container>

@@ -1,9 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap'
-import Gear from './Gear';
-import GearSetUp from './GearSetUp';
-import Habitat from './Habitat';
+import MainContent from './MainContent';
 import SideBar from './SideBar';
-import Technique from './Technique';
 
 function Docs() {
   return (
@@ -14,10 +11,7 @@ function Docs() {
             <SideBar/>
           </Col>
           <Col sm={8}>
-            <Habitat/>
-            <Technique/>
-            <Gear/>
-            <GearSetUp/>
+            <MainContent/>
           </Col>
         </Row>
       </Container>

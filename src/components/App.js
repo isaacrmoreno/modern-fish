@@ -21,8 +21,6 @@ function App() {
         <Switch>
           <Route exact path ="/" component={Home}/> 
           <Route exact path="/docs" component={Docs}/>
-          {/* <Route exact path="/" component={License}/> */}
-          {/* <Sponsors/> */}
         </Switch>
     </Router>
     </>
