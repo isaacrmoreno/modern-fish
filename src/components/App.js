@@ -1,10 +1,7 @@
 import Docs from "./Docs";
 import Home from "./Home";
-import Navigation from "./Navigation";
 import {Helmet} from "react-helmet";
-
-// import License from "./License";
-// import Sponsors from "./Sponsors";
+import Navigation from "./Navigation";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {

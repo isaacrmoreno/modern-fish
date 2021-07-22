@@ -1,6 +1,6 @@
-import { Container, Col, Row } from 'react-bootstrap'
-import MainContent from './MainContent';
 import SideBar from './SideBar';
+import MainContent from './MainContent';
+import { Container, Col, Row } from 'react-bootstrap'
 
 function Docs() {
   return (

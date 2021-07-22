@@ -1,6 +1,11 @@
 function MainContent() {
   return (
     <>
+
+      <h1>Getting Started</h1>
+
+      {/* This is where I can put basic gear/technique info before they select a fish species to learn about*/}
+
       <h1>Habitat Header</h1>
       <p>Lorem Ipsum </p>
 

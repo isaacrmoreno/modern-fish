@@ -1,6 +1,6 @@
+import utilStyles from '../styles/utils.module.css'
 import { LinkContainer } from 'react-router-bootstrap';
 import { Card, Container, Nav } from 'react-bootstrap';
-import utilStyles from '../styles/utils.module.css'
 
 function Home() {
   return (

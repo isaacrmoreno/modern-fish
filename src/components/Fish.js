@@ -1,52 +1,47 @@
+import firebase from './../firebase';
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import firebase from './../firebase';
 
 function Fish() {
 
   const [fish, setFishes] = useState([]);
-  const [loading, setLoading] = useState(false)
   const [selectedFish, setSelectedFish] = useState(null)
 
   console.log(`selected Fish:`, selectedFish)
 
   const ref = firebase.firestore().collection('Fish');
 
-  function getfishes() {
-    setLoading(true);
+  function getFishes() {
     ref.onSnapshot((querySnapshot) => {
       const fishDetails=[];
       querySnapshot.forEach((doc) => {
         fishDetails.push(doc.data());
       })
       setFishes(fishDetails);
-      setLoading(false);
     })
   }
 
   useEffect(() => {
-    getfishes();
+    getFishes();
   },[]);
   
-  const handleSubmit = e => {
-    e.preventDefault();
-    handleChange()    
-    return 
-  } 
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   handleChange()    
+  //   return 
+  // } 
     
   const handleChange = e => {
 
+    console.log(`e:`,e)
+    console.log(`e.target:`,e.target)
     const { value, name } = e.target
-    const selectedFishUrl = { ...selectedFish }
-    selectedFishUrl[name] = value
-    console.log(value)
-    setSelectedFish(selectedFishUrl)
+    const selectedFishDetails = { ...selectedFish }
+    selectedFishDetails[name] = value
+    console.log(`value:`,value)
+    setSelectedFish(selectedFishDetails)
   }
 
-  if (loading) {
-    return <h2>Loading...</h2>
-  }  
-  
   return (
     <>
       <Container>
@@ -54,9 +49,25 @@ function Fish() {
             <Col>
               <ul>
               {fish.map((fish, index) => (
-                <li key={index} value={fish.licenseUrl}><a href="">{fish.name}</a></li>
+                <li onClick={handleChange} key={index} value={fish.id}><a href="/docs/:id">{fish.name}</a></li>
                   ))}
-              </ul>
+              </ul> 
+
+                fish[id]habitat
+
+                {/* look into express! Look into more routing stuff. */} 
+
+              {/* I need to do the following:
+              - be able to click one of these li tags
+              - have each have an id associated with it
+              - Based off its id it will retrieve/display x,y,z information from firestore on mainContent component.
+              */}
+
+              {/* dynamic routing based of the fish id. 
+              
+              */}
+              
+
             </Col>
         </Row>
       </Container>
