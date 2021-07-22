@@ -1,19 +1,4 @@
-User stories:
-
-I want to be able to select the type of fish I want to fish for via a drop down
-
-Added state information to firebase.
-Was able to connect firebase to display state names in drop down. 
-
-now to figure best way to send user to appropriate link based off selected state
-
-I feel like im over complicating my button @.@
-
-pull id from selected drop down item. 
-
-use that id to pull url. and use that as href link to go to specific website. 
-
-Adding links and about section 
+As of Wednesday July 21 8:25 pm Ive worked on this project for about 20 hours now. Not where you wanna be just yet. Keep going.
 
 Exploration: 
 Fish Species API
