@@ -27,6 +27,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [Cool Symbol](https://coolsymbol.com/)
 - [Setting Up Dynamic Routing in React](https://betterprogramming.pub/setting-up-dynamic-routing-in-react-23ca07d59057)
 - [Styling React Components with CSS Modules](https://www.youtube.com/watch?v=ZawAwPYrxGA)
+- [https://www.youtube.com/watch?v=7pJmM-XdPm8](https://youtu.be/7pJmM-XdPm8)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
