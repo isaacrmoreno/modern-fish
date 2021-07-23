@@ -69,6 +69,7 @@ function Fish() {
               {fish.map((fish, index) => (
                 <li onClick={handleChange} key={index} value={fish.id}><a href="/docs/:id">{fish.name}</a></li>
                   ))}
+                  {/* where("fish.name", "==", "id") */}
               </ul> 
 
                 {/* fish[id]habitat */}
