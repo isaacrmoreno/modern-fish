@@ -11,19 +11,37 @@ function Fish() {
 
   const ref = firebase.firestore().collection('Fish');
 
+  // let query = ref.where('fish', '==', 'id')
+
+  // function getFishDetails() {
+  //   ref.onSnapshot((querySnapshot) => {
+  //     const fishDetails = [];
+  //     querySnapshot.forEach((doc) => {
+  //       fishDetails.push(doc.data());
+  //     })
+  //     setSelectedFish(fishDetails);
+  //   })
+  // }
+
+  // useEffect(() => {
+  //   getFishDetails();
+  // },[]);
+
   function getFishes() {
     ref.onSnapshot((querySnapshot) => {
-      const fishDetails=[];
+      const fishNames=[];
       querySnapshot.forEach((doc) => {
-        fishDetails.push(doc.data());
+        fishNames.push(doc.data());
       })
-      setFishes(fishDetails);
+      setFishes(fishNames);
     })
   }
 
   useEffect(() => {
     getFishes();
   },[]);
+
+
   
   // const handleSubmit = e => {
   //   e.preventDefault();
@@ -53,8 +71,9 @@ function Fish() {
                   ))}
               </ul> 
 
-                fish[id]habitat
+                {/* fish[id]habitat */}
 
+                {/* <p>{query}</p> */}
                 {/* look into express! Look into more routing stuff. */} 
 
               {/* I need to do the following:
