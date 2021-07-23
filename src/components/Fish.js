@@ -3,11 +3,42 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Fish() {
-  
-  const ref = firebase.firestore().collection('Fish');
 
   const [fish, setFishes] = useState([]);
-  const [selectedFish, setSelectedFish] = useState(null)
+  const [selectedFish, setSelectedFish] = useState(null);
+  
+document.addEventListener("DomContentLoader", event => {
+
+  // const app = firebase.app();
+  const db = firebase.firestore();  
+  const ref = db.collection('Fish');
+
+  ref.get()
+      .then(doc => {
+        const data  = doc.data();
+        document.write(data.habitat + `<br>`)
+        document.write(data.technique)
+      })
+
+})
+
+
+
+
+
+//     const handleSelectFish = (id) => {
+//     ref.get({ collection: 'Fish', doc: id })
+//       .then((fish) => {
+//     const firestoreFish = {
+//       name: fish.get('name'),
+//       features: fish.get('features'),
+//       habitat: fish.get('habitat'),
+//       technique: fish.get('technique'),
+//       id: fish.id
+//     }
+//     setSelectedFish(firestoreFish);
+//   })
+// }
 
   console.log(`selected Fish:`, selectedFish)
 
@@ -17,7 +48,7 @@ function Fish() {
       querySnapshot.forEach((doc) => {
         fishDetails.push(doc.data());
       })
-      setSelectedFish(fishDetails);
+      setFishes(fishDetails);
     })
   }
 
@@ -25,18 +56,18 @@ function Fish() {
     getFishDetails();
   },[]);
 
-  const handleSelectFish = (id) => {
-    this.props.firestore.get({ collection: 'Fish', doc: id }).then((fish) => {
-      const firestoreFish = {
-        name: fish.get('name'),
-        features: fish.get('features'),
-        habitat: fish.get('habitat'),
-        technique: fish.get('technique'),
-        id: fish.id
-      }
-      setSelectedFish(firestoreFish);
-    })
-  }
+  // const handleSelectFish = (id) => {
+  //   this.props.firestore.get({ collection: 'Fish', doc: id }).then((fish) => {
+  //     const firestoreFish = {
+  //       name: fish.get('name'),
+  //       features: fish.get('features'),
+  //       habitat: fish.get('habitat'),
+  //       technique: fish.get('technique'),
+  //       id: fish.id
+  //     }
+  //     setSelectedFish(firestoreFish);
+  //   })
+  // }
 
   // const handleSubmit = e => {
   //   e.preventDefault();
@@ -45,7 +76,6 @@ function Fish() {
   // } 
     
   const handleChange = e => {
-    console.log(`e.target:`,e.target)
     const { value, name } = e.target
     const selectedFishDetails = { ...selectedFish }
     selectedFishDetails[name] = value
