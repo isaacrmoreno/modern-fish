@@ -6,7 +6,7 @@ function SideBar() {
     <>
       <Container>
         <Row>
-          <h3>Fish - Most Popular</h3>
+          <h3>Fish Species</h3>
           <hr/>
           <Fish/>
         </Row>

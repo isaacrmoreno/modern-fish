@@ -15,7 +15,7 @@ function Home() {
       <Nav>
           <Card className={utilStyles.card} border="primary" body>
             <LinkContainer to="/docs">
-                  <Nav.Link className={utilStyles.headingLg}>Fish Documentation 🎣</Nav.Link>
+                  <Nav.Link className={utilStyles.headingLg}>🎣 Documentation 🐟</Nav.Link>
             </LinkContainer>
           </Card>
       </Nav>

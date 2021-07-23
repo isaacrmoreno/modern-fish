@@ -1,22 +1,22 @@
+import Fish from "./Fish";
+
 function MainContent() {
   return (
     <>
 
       <h1>Getting Started</h1>
 
+      <hr/>
       {/* This is where I can put basic gear/technique info before they select a fish species to learn about*/}
-
-      <h1>Habitat Header</h1>
-      <p>Lorem Ipsum </p>
-
-      <h1>Technique Header</h1>
-      <p>Lorem Ipsum </p>
-
-      <h1>Gear Header</h1>
-      <p>Lorem Ipsum</p>
-
-      <h1>Gear Set Up Header</h1>
-      <p>Lorem Ipsum</p>
+        {/* <License/> */}
+      <h1>{Fish.name}</h1>
+      <hr/>
+      <h1>Features:</h1>
+      <p>{Fish.features}</p>
+      <h1>Habitat:</h1>
+      <p>{Fish.habitat}</p>
+      <h1>Technique:</h1>
+      <p>{Fish.technique}</p>
     </>
     
   //   <ul>
