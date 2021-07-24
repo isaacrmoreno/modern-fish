@@ -1,4 +1,4 @@
-import Docs from "./Docs";
+import Body from "./Body";
 import Home from "./Home";
 import {Helmet} from "react-helmet";
 import Navigation from "./Navigation";
@@ -17,7 +17,7 @@ function App() {
       <Navigation/>
         <Switch>
           <Route exact path ="/" component={Home}/> 
-          <Route exact path="/docs" component={Docs}/>
+          <Route exact path="/docs" component={Body}/>
         </Switch>
     </Router>
     </>
