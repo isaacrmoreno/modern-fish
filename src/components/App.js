@@ -1,7 +1,7 @@
 import Body from "./Body";
 import Home from "./Home";
 import {Helmet} from "react-helmet";
-import Navigation from "./Navigation";
+import Header from "./Header";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
         <meta name="description" content="Modern Fish aims to simplify the fishing experience surrounding equipment, setup, and species information to empower the public to get outside and fish"/>
     </Helmet>
     <Router>
-      <Navigation/>
+      <Header/>
         <Switch>
           <Route exact path ="/" component={Home}/> 
-          <Route exact path="/docs" component={Body}/>
+          <Route exact path="/docs" component={Body}/> 
         </Switch>
     </Router>
     </>
