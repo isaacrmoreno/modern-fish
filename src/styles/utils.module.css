@@ -84,6 +84,7 @@
   flex-direction: row;
   height: 100vh;
 }
+
 .scrollBar {
   flex: 1;
   overflow-y: scroll;

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import utilStyles from '../styles/utils.module.css'
 import { Container, Row, Col } from "react-bootstrap";
 
-
 function Fish() {
   const [fish, setFishes] = useState([]);
   const [selectedFish, setSelectedFish] = useState(null);
@@ -14,11 +13,11 @@ function Fish() {
 
   function getFishNames() {
     ref.onSnapshot((querySnapshot) => {
-      const fishDetails = [];
+      const fishNameList = [];
       querySnapshot.forEach((doc) => {
-        fishDetails.push(doc.data());
+        fishNameList.push(doc.data());
       });
-      setFishes(fishDetails);
+      setFishes(fishNameList);
     });
   }
 
@@ -33,6 +32,7 @@ function Fish() {
   };
 
   function getFishDetails(id) {
+    
     handleChange(id);
   }
 
@@ -58,6 +58,7 @@ function Fish() {
           </Col>
         </Row>
       </Container>
+          {/* <DocContent/> */}
     </>
   );
 }

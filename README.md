@@ -21,6 +21,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [How to Structure Your Data | Get to know Cloud Firestore #5](https://youtu.be/haMOUb3KVSo)
 - React-Bootstrap: [Layout](https://react-bootstrap.github.io/layout/grid/) | [Navbars](https://react-bootstrap.netlify.app/components/navbar/#navbars) | [Cards](https://react-bootstrap.netlify.app/components/cards/)
 - [Creating a Navbar Using react-router-bootstrap](https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec)
+- [Learn useState In 15 Minutes](https://youtu.be/O6P86uwfdR0)
 - [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
 - [How to Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
 - [How to get data in Cloud Firestore with React](https://www.youtube.com/watch?v=ckkeZ_f3b-M)

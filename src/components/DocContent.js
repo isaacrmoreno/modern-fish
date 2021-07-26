@@ -1,4 +1,3 @@
-import Fish from "./Fish";
 
 function DocContent(props) {
   return (
@@ -8,14 +7,14 @@ function DocContent(props) {
       <hr />
       {/* This is where I can put basic gear/technique info before they select a fish species to learn about*/}
       {/* <License/> */}
-      <h1>{Fish.name}</h1>
-      <hr />
-      <h1>Features:</h1>
-      <p>{Fish.features}</p>
-      <h1>Habitat:</h1>
-      <p>{Fish.habitat}</p>
-      <h1>Technique:</h1>
-      <p>{Fish.technique}</p>
+      <h2>{props.name}</h2>
+      <hr/>
+      <h2>Features:</h2>
+      <p>{props.features}</p>
+      <h2>Habitat:</h2>
+      <p>{props.habitat}</p>
+      <h2>Technique:</h2>
+      <p>{props.technique}</p>
     </>
 
     //   <ul>
@@ -39,7 +38,6 @@ function DocContent(props) {
     //       </Accordion.Collapse>
     //     </Accordion>
     //   </li>
-
     // </ul>
   );
 }
