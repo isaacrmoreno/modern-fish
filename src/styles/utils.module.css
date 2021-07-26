@@ -55,6 +55,11 @@
   margin: 0 0 1.25rem;
 }
 
+.listItem:hover {
+  color: #ff4d65;
+  cursor: pointer;
+}
+
 .lightText {
   color: #666;
 }
@@ -67,4 +72,9 @@
   margin: 3rem auto;
   float: none;
   margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: ease 0.08s;
 }
