@@ -1,6 +1,11 @@
 
 function DocContent(props) {
+  
+      function fishDetails(id) {
+        props.selectedFish(id)
+      }
   return (
+
     <>
       <h1>Getting Started</h1>
 
