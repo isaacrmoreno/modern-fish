@@ -78,3 +78,13 @@
   transform: scale(1.02);
   transition: ease 0.08s;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.scrollBar {
+  flex: 1;
+  overflow-y: scroll;
+}
