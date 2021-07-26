@@ -1,9 +1,8 @@
 
-function DocContent(props) {
+function Details(props) {
   
-      function fishDetails(id) {
-        props.selectedFish(id)
-      }
+        // props.handleChangeSelectedFish()
+      
   return (
 
     <>
@@ -47,4 +46,4 @@ function DocContent(props) {
   );
 }
 
-export default DocContent;
+export default Details;

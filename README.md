@@ -30,6 +30,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [Styling React Components with CSS Modules](https://www.youtube.com/watch?v=ZawAwPYrxGA)
 - [How to dd a favicon and title](https://youtu.be/7pJmM-XdPm8)
 - [How to add a scroll bar to a component in React?](https://stackoverflow.com/questions/50891589/how-to-add-a-scroll-bar-to-a-component-in-react)
+- [Passing functions as props](https://www.youtube.com/watch?v=Q8B_j4JuKNU)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 

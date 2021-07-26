@@ -3,9 +3,7 @@ import utilStyles from '../styles/utils.module.css'
 
 function SideBar(props) {
   
-  // function displayFishNames() {
-    props.handleChangeSelectedFish()
-  // }
+  props.handleChangeSelectedFish()
 
   return(
     <>
@@ -16,7 +14,7 @@ function SideBar(props) {
           <hr/>
             <ul>
               {props.fish.map((fish, index) => (
-                <li className={utilStyles.listItem} onClick={()=> props.handleChangeSelectedFish(fish.id)} key={index} value={fish.id}>
+                <li className={utilStyles.listItem} onClick={()=> props.handleChangeSelectedFish()} key={index} value={fish.id}>
                   {fish.name}
                 </li>
               ))}
