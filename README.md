@@ -22,12 +22,13 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - React-Bootstrap: [Layout](https://react-bootstrap.github.io/layout/grid/) | [Navbars](https://react-bootstrap.netlify.app/components/navbar/#navbars) | [Cards](https://react-bootstrap.netlify.app/components/cards/)
 - [Creating a Navbar Using react-router-bootstrap](https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec)
 - [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
-- [How To Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
+- [How to Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
 - [How to get data in Cloud Firestore with React](https://www.youtube.com/watch?v=ckkeZ_f3b-M)
 - [Cool Symbol](https://coolsymbol.com/)
 - [Setting Up Dynamic Routing in React](https://betterprogramming.pub/setting-up-dynamic-routing-in-react-23ca07d59057)
 - [Styling React Components with CSS Modules](https://www.youtube.com/watch?v=ZawAwPYrxGA)
-- [https://www.youtube.com/watch?v=7pJmM-XdPm8](https://youtu.be/7pJmM-XdPm8)
+- [How to dd a favicon and title](https://youtu.be/7pJmM-XdPm8)
+- [How to add a scroll bar to a component in React?](https://stackoverflow.com/questions/50891589/how-to-add-a-scroll-bar-to-a-component-in-react)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
