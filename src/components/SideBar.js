@@ -1,15 +1,23 @@
-import Fish from './Fish'
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import utilStyles from '../styles/utils.module.css'
 
-function SideBar() {
+function SideBar(props) {
+  
   return(
     <>
       <Container className={utilStyles.container}>
         <Row className={utilStyles.scrollBar}>
+          <Col>
           <h3>Fish Species</h3>
           <hr/>
-          <Fish/>
+            <ul>
+              {this.fish.map((fish, index) => (
+                <li className={utilStyles.listItem} onClick={props.handleChangeSelectedFish} key={index} value={fish.id}>
+                  {fish.name}
+                </li>
+              ))}
+            </ul>
+          </Col>
         </Row>
       </Container>
     </>
@@ -17,3 +25,5 @@ function SideBar() {
 }
 
 export default SideBar;
+
+ 
