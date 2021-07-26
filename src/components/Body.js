@@ -43,10 +43,10 @@ const handleChangeSelectedFish = (e) => {
       <Container>
         <Row>
           <Col sm={4}>
-            <SideBar setSelectedFish={handleChangeSelectedFish} fishList = {fish.data}/>
+            <SideBar setFishes={setFishes} getFishNames={getFishNames}/>
           </Col>
           <Col sm={8}>
-            <DocContent id={selectedFish.data}/>
+            <DocContent setSelectedFish={setSelectedFish}/>
           </Col>
         </Row>
       </Container>
