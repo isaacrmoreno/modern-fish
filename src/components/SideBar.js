@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import utilStyles from '../styles/utils.module.css'
 
-function SideBar(props) {
+function SideBar({fish, onChangeFish}) {
   
   return(
     <>
@@ -11,10 +11,10 @@ function SideBar(props) {
           <h3>Fish Species</h3>
           <hr/>
             <ul>
-              {props.fish.map((fish, index) => (
+              {fish.map((fish, index) => (
                 <li
                   className={utilStyles.listItem} 
-                  onClick={()=> props.onChangeFish(fish.id)}
+                  onClick={()=> onChangeFish(fish.id)}
                   key={index}
                   value={fish.id}>
                 {fish.name}

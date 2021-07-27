@@ -1,27 +1,29 @@
-function Details(props) {
-        
+import GettingStarted from './GettingStarted'
+
+function Details({fish, selectedFish, onChangeFish}) {
+  console.log(selectedFish) 
+  
   return (
-
     <>
-      <h1>Getting Started</h1>
-      {props.selectedFish} // here im just returning the id.
-      {/* {props.selectedFish()} // is not a function. */}
-      {/* {props.onChangeFish()} // id of undefined */}
-      {/* {props.fish} // here nothing.  */}
-      {props.fish}
-      <hr />
-      {/* This is where I can put basic gear/technique info before they select a fish species to learn about*/}
-      {/* <License/> */}
-
-      <h2>{props.name}</h2>
-      <hr/>
-      <h2>Features:</h2>
-      <p>{props.features}</p>
-      <h2>Habitat:</h2>
-      <p>{props.habitat}</p>
-      <h2>Technique:</h2>
-      <p>{props.technique}</p>
+      {selectedFish === null ? <GettingStarted/> :
+      <>
+        <h1>Getting Started</h1>
+        <hr />
+        <h2>{selectedFish.name}</h2>
+        <hr/>
+        <h2>Features:</h2>
+        <p>{selectedFish.features}</p>
+        <h2>Habitat:</h2>
+        <p>{selectedFish.habitat}</p>
+        <h2>Technique:</h2>
+        <p>{selectedFish.technique}</p>
+      </>
+      } 
     </>
+  )
+}
+
+  export default Details;
 
     //   <ul>
     //   <li>
@@ -45,7 +47,3 @@ function Details(props) {
     //     </Accordion>
     //   </li>
     // </ul>
-  );
-}
-
-export default Details;
