@@ -1,10 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import utilStyles from '../styles/utils.module.css'
+import PropTypes from "prop-types";
+
 
 function SideBar(props) {
   
-  props.handleChangeSelectedFish()
-
   return(
     <>
       <Container className={utilStyles.container}>
@@ -14,7 +14,7 @@ function SideBar(props) {
           <hr/>
             <ul>
               {props.fish.map((fish, index) => (
-                <li className={utilStyles.listItem} onClick={()=> props.handleChangeSelectedFish()} key={index} value={fish.id}>
+                <li className={utilStyles.listItem} onClick={()=> props.onChangeFish(fish.id)} key={index} value={fish.id}>
                   {fish.name}
                 </li>
               ))}
@@ -26,6 +26,8 @@ function SideBar(props) {
   );
 }
 
-export default SideBar;
+  SideBar.propTypes = {
+    handleChangeSelectedFish: PropTypes.func
+  }
 
- 
+export default SideBar;
