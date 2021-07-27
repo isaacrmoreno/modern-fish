@@ -1,15 +1,17 @@
+import React from 'react'
 import GettingStarted from './GettingStarted'
 
 function Details({fish, selectedFish, onChangeFish}) {
-  console.log(selectedFish) 
+  console.log(`selected fish:`,selectedFish)
+  console.log(`fish:`,fish.name) // undefined. 
+  // console.log(onChangeFish())
   
   return (
     <>
       {selectedFish === null ? <GettingStarted/> :
       <>
-        <h1>Getting Started</h1>
-        <hr />
         <h2>{selectedFish.name}</h2>
+        <h2>{fish.name}</h2>
         <hr/>
         <h2>Features:</h2>
         <p>{selectedFish.features}</p>

@@ -12,14 +12,15 @@ function Body() {
 
   const [fish, setFishes] = useState([]);
   const [selectedFish, setSelectedFish] = useState(null);
+        // State     // Function
 
   function getFishNames() {
     ref.onSnapshot((querySnapshot) => {
-      const fishDetails = [];
+      const fishNames = [];
       querySnapshot.forEach((doc) => {
-        fishDetails.push(doc.data());
+        fishNames.push(doc.data());
       });
-      setFishes(fishDetails);
+      setFishes(fishNames);
     });
   }
 
@@ -29,8 +30,28 @@ function Body() {
 
 const handleChangeSelectedFish = (id) => {
   console.log(`id:`,id)
-  setSelectedFish(id);
-};
+  ref.onSnapshot((querySnapshot) => {
+    const firestoreFish = [];
+    querySnapshot.get({collection: 'Fish', doc: id}).then(
+      fish => {
+        const firestoreFish ={
+          name: fish.get('name')
+          habitat: fish.get('')
+        }
+      }
+    )
+  }
+
+
+// viewFishDetails = id => {
+//   this.props.firestore.get({collection: 'Fish', doc: id}).then(
+//     fish => {
+//       const firestoreFish ={
+//         name: fish.get('name')
+//       }
+//     }
+//   )
+// }
 
   return (
     <>
