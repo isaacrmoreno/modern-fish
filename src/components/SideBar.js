@@ -1,7 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import utilStyles from '../styles/utils.module.css'
-import PropTypes from "prop-types";
-
 
 function SideBar(props) {
   
@@ -14,8 +12,12 @@ function SideBar(props) {
           <hr/>
             <ul>
               {props.fish.map((fish, index) => (
-                <li className={utilStyles.listItem} onClick={()=> props.onChangeFish(fish.id)} key={index} value={fish.id}>
-                  {fish.name}
+                <li
+                  className={utilStyles.listItem} 
+                  onClick={()=> props.onChangeFish(fish.id)}
+                  key={index}
+                  value={fish.id}>
+                {fish.name}
                 </li>
               ))}
             </ul>
@@ -25,9 +27,5 @@ function SideBar(props) {
     </>
   );
 }
-
-  SideBar.propTypes = {
-    handleChangeSelectedFish: PropTypes.func
-  }
 
 export default SideBar;

@@ -20,23 +20,17 @@ function Body() {
 
   function getFishNames() {
     ref.onSnapshot((querySnapshot) => {
-      const fishNameList = [];
+      const fishDetails = [];
       querySnapshot.forEach((doc) => {
-        fishNameList.push(doc.data());
+        fishDetails.push(doc.data());
       });
-      setFishes(fishNameList);
+      setFishes(fishDetails);
     });
   }
 
   useEffect(() => {
     getFishNames();
   },[]);
-
-// const handleChangeSelectedFish = (e) => {
-//   let id = e.target.value
-//   console.log(`id:`,id)
-//   setSelectedFish(id);
-// };
 
 const handleChangeSelectedFish = (id) => {
   console.log(`id:`,id)
@@ -51,7 +45,7 @@ const handleChangeSelectedFish = (id) => {
             <SideBar fish={fish} onChangeFish={handleChangeSelectedFish}/>
           </Col>
           <Col sm={8}>
-            <Details fish={fish} setSelectedFish={setSelectedFish} selectedFish={selectedFish}/>
+            <Details fish={fish} selectedFish={selectedFish} onChangeFish={handleChangeSelectedFish}/>
           </Col>
         </Row>
       </Container>
