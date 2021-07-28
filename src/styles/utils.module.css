@@ -33,24 +33,6 @@
   line-height: 1.5;
 }
 
-.borderCircle {
-  border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .listItem {
   margin: 0 0 1.25rem;
 }
@@ -88,4 +70,17 @@
 .scrollBar {
   flex: 1;
   overflow-y: scroll;
+}
+
+.a:link,
+.a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.a:hover,
+.a:active {
+  color: #ff4d65;
+  cursor: pointer;
+  text-decoration: none;
 }

@@ -8,7 +8,7 @@ function SideBar({fish, onChangeFish}) {
       <Container className={utilStyles.container}>
         <Row className={utilStyles.scrollBar}>
           <Col>
-          <h3>Fish Species</h3>
+          <h3 className={utilStyles.headingLg}>Fish Species</h3>
           <hr/>
             <ul>
               {fish.map((fish, index) => (
@@ -29,3 +29,26 @@ function SideBar({fish, onChangeFish}) {
 }
 
 export default SideBar;
+
+    //   <ul>
+    //   <li>
+    //     <Accordion>
+    //       <Accordion.Toggle as={Button} variant="link" eventKey="0">
+    //         Trout ↓
+    //       </Accordion.Toggle>
+    //       <Accordion.Collapse eventKey="0">
+    //         <p>Hello! I'm the body</p>
+    //       </Accordion.Collapse>
+    //     </Accordion>
+    //   </li>
+    //   <li>
+    //     <Accordion>
+    //       <Accordion.Toggle as={Button} variant="link" eventKey="1">
+    //         Steelhead ↓
+    //       </Accordion.Toggle>
+    //       <Accordion.Collapse eventKey="1">
+    //         <p>Hello! I'm the body</p>
+    //       </Accordion.Collapse>
+    //     </Accordion>
+    //   </li>
+    // </ul>

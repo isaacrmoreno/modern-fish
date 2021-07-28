@@ -1,7 +1,6 @@
 import SideBar from './SideBar';
-import firebase from "../firebase";
-import 'firebase/firestore';
 import Details from './Details';
+import firebase from "../firebase";
 import React, { useState, useEffect } from "react";
 import { Container, Col, Row } from 'react-bootstrap'
 
@@ -28,7 +27,6 @@ function Body() {
   },[]);
 
   const handleChangeSelectedFish = (fish) => {
-    console.log(`fish:`,fish)
     setSelectedFish(fish)
   }
 
@@ -40,7 +38,7 @@ function Body() {
             <SideBar fish={fish} onChangeFish={handleChangeSelectedFish}/>
           </Col>
           <Col sm={8}>
-            <Details fish={fish} selectedFish={selectedFish} onChangeFish={handleChangeSelectedFish}/>
+            <Details selectedFish={selectedFish}/>
           </Col>
         </Row>
       </Container>

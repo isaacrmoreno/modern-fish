@@ -1,8 +1,18 @@
-function GettingStarted() {
+import License from './License'
+import utilStyles from '../styles/utils.module.css'
+import Details from './Details';
+
+function GettingStarted({selectedFish}) {
   return (
-    <p>This is the getting started page</p>
-// This is where I can put basic gear/technique info before they select a fish species to learn about
-//    <License/>
+    <>
+    {selectedFish !== null ? <Details/> : 
+    <>
+      <div className={utilStyles.headingXl}>License Information</div>
+      <hr/>
+      <License/>
+    </>
+    }
+    </>
   );
 }
 

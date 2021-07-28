@@ -1,7 +1,7 @@
 import Body from "./Body";
 import Home from "./Home";
-import {Helmet} from "react-helmet";
 import Header from "./Header";
+import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {

@@ -1,8 +1,7 @@
-import { Container, Navbar, Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import mainLogo from '../img/fish.png';
 import gitHubLogo from '../img/github.png'
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom' 
+import { LinkContainer } from 'react-router-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
 function Header() {
   return (
@@ -20,7 +19,10 @@ function Header() {
             Modern Fish
           </Navbar.Brand>      
         </LinkContainer>
-        <Nav className="me-auto"> {/* effects text location  */}
+        <Nav className="me-auto">
+          <LinkContainer to="/getting-started">
+            <Nav.Link>Getting Started</Nav.Link>
+          </LinkContainer>
           <LinkContainer to="/docs">
             <Nav.Link>Docs</Nav.Link>
           </LinkContainer>
