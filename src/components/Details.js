@@ -4,7 +4,7 @@ import GettingStarted from './GettingStarted'
 function Details({fish, selectedFish, onChangeFish}) {
   console.log(`selected fish:`,selectedFish)
   console.log(`fish:`,fish.name) // undefined. 
-  // console.log(onChangeFish())
+  // console.log(onChangeFish()) 
   
   return (
     <>
