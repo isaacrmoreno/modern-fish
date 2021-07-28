@@ -42,7 +42,7 @@ function Body() {
   // }
 
   // this.props.firestore.get({collection: 'Fish', doc: id}).then(
- 
+    
  const viewFishDetails = id => {
   this.props.firestore.get({collection: 'Fish', doc: id}).then(
     fish => {
