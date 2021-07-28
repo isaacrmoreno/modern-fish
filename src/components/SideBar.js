@@ -14,7 +14,7 @@ function SideBar({fish, onChangeFish}) {
               {fish.map((fish, index) => (
                 <li
                   className={utilStyles.listItem} 
-                  onClick={()=> onChangeFish(fish.id)}
+                  onClick={()=> onChangeFish(fish)}
                   key={index}
                   value={fish.id}>
                 {fish.name}
