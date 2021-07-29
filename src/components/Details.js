@@ -1,12 +1,11 @@
-import React from 'react'
-import GettingStarted from './GettingStarted'
+import License from './License'
 import utilStyles from '../styles/utils.module.css'
 
 function Details({selectedFish}) {
   
   return (
     <>
-      {selectedFish === null ? <GettingStarted/> :
+      {selectedFish === null ? <License/> :
       <>
         <div className={utilStyles.headingXl}>{selectedFish.name}</div>
         <hr/>

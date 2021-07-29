@@ -4,6 +4,8 @@ import { Accordion ,Button, Table } from 'react-bootstrap'
 function License() {
   return (
     <>
+      <div className={utilStyles.headingXl}>License Information</div>
+      <hr/>
       <p>Fishing licenses are valid from Jan. 1 to Dec. 31. You can begin buying your next year's license on Dec. 1 of the prior year. If you have questions, please call
         <a className={utilStyles.a} href="https://odfw.huntfishoregon.com/login"> ODFW </a>licensing staff at
         <a className={utilStyles.a} href="tel:503-947-6101"> 503-947-6101.</a>
