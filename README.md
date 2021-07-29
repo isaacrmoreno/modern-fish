@@ -16,7 +16,7 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 
 ## Referenced Resources 📚
 
-- [Oregon Department of Fish & Wildlife](https://myodfw.com/fishing/species)
+- [Oregon Department of Fish & Wildlife](https://myodfw.com/fishing/species) via copy
 - [Next.js](https://nextjs.org/) for inspiration purposes
 - [How to Structure Your Data | Get to know Cloud Firestore #5](https://youtu.be/haMOUb3KVSo)
 - React-Bootstrap: [Layout](https://react-bootstrap.github.io/layout/grid/) | [Navbars](https://react-bootstrap.netlify.app/components/navbar/#navbars) | [Cards](https://react-bootstrap.netlify.app/components/cards/)
@@ -25,7 +25,6 @@ Modern Fish aims to simplify the fishing experience surrounding equipment, setup
 - [Learn useEffect in 13 Minutes](https://www.youtube.com/watch?v=0ZJgIjIuY7U)
 - [How to Set Up React With Firebase/Firestore](https://youtu.be/3ZEz-iposj8)
 - [How to get data in Cloud Firestore with React](https://www.youtube.com/watch?v=ckkeZ_f3b-M)
-- [Cool Symbol](https://coolsymbol.com/)
 - [Setting Up Dynamic Routing in React](https://betterprogramming.pub/setting-up-dynamic-routing-in-react-23ca07d59057)
 - [Styling React Components with CSS Modules](https://www.youtube.com/watch?v=ZawAwPYrxGA)
 - [How to dd a favicon and title](https://youtu.be/7pJmM-XdPm8)

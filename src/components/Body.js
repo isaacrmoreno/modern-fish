@@ -30,12 +30,19 @@ function Body() {
     setSelectedFish(fish)
   }
 
+  const handleResetFishState = () => {
+    setSelectedFish(null)
+  }
+
   return (
     <>
       <Container>
         <Row>
           <Col sm={4}>
-            <SideBar fish={fish} onChangeFish={handleChangeSelectedFish}/>
+            <SideBar 
+            fish={fish} 
+            onChangeFish={handleChangeSelectedFish} 
+            onResetFishState={handleResetFishState}/>
           </Col>
           <Col sm={8}>
             <Details selectedFish={selectedFish}/>
