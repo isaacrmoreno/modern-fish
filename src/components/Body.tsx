@@ -14,7 +14,7 @@ function Body() {
 
   function getFishNames() {
     ref.onSnapshot((querySnapshot) => {
-      const fishNames = [];
+      let fishNames: string[] = [];
       querySnapshot.forEach((doc) => {
         fishNames.push(doc.data());
       });
@@ -26,7 +26,7 @@ function Body() {
     getFishNames();
   },[]);
 
-  const handleChangeSelectedFish = (fish) => {
+  const handleChangeSelectedFish = (fish: any) => {
     setSelectedFish(fish)
   }
 
